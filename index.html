@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Odkaz na CSS soubor -->
     <title>Ověření</title>
     <!-- Odkaz na soubor script.js -->
     <script src="script.js"></script>
@@ -97,7 +97,7 @@
             </div>
             
             <!-- Tlačítko pro potvrzení odpovědí a přesměrování na valentine.html -->
-            <button type="button" id="submitBtn">Potvrdit odpovědi</button>
+            <button type="button" id="submitBtn">Potvrdit odpovědi</button> <!-- Odstraněno onclick, bude se ovládat z JavaScriptu -->
 
         </form>
 
@@ -110,6 +110,9 @@
             <!-- Tlačítko pro pokračování na další otázku (pouze v případě správné odpovědi na všechny otázky) -->
             <button type="button" id="nextQuestionBtn" style="display: none;">Pokračovat na další otázku</button>
         </div>
+
+        <!-- Script soubor pro JavaScript funkcionalitu -->
+        <script src="script.js"></script>
 
     </div>
 
