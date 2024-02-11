@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otázka na Valentýna</title>
-    <!-- Odkaz na externí JavaScript soubor -->
-    <script src="script.js" defer></script>
 </head>
 <body>
 
     <h1>Přestože jsi se upsal ďáblu už nějaký pátek zpátky, tak se Tě i tak zeptám... 
     Budeš MÝM mužem na Valentýna?</h1>
 
-    <!-- Sem přidáme kód pro tlačítka -->
-    <!-- Vložte tuto část kódu mezi komentáře "Sem přidáme kód pro tlačítka" -->
+    <!-- Tlačítko "Ano" pro odpověď Ano -->
     <button type="button" id="yesBtn">Ano</button>
-    <button type="button" id="noBtn">Ne</button>
+
+    <!-- Skryté tlačítko "Ne" pro odpověď Ne -->
+    <button type="button" id="noBtn" style="display: none;">Ne</button>
+
     <p id="valentineResponse"></p>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
-
