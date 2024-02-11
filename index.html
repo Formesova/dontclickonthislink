@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Odkaz na CSS soubor -->
+    <link rel="stylesheet" href="styles.css">
     <title>Ověření</title>
     <!-- Odkaz na soubor script.js -->
     <script src="script.js"></script>
+
+
 </head>
 <body>
 
@@ -94,11 +96,13 @@
             <!-- Kontejner pro text a tlačítko -->
             <div id="textContainer">
                 <!-- Text -->
-                <p>Pokud jsou všechny Tvé odpovědi správné, budeš mít možnost se dostat dál, pokud ne, zkus to znovu, negře </p>
+                <p>Pokud jsou všechny Tvé odpovědi správné, budeš mít možnost se dostat dál, pokud ne, zkus to znovu, negře</p>
+
+                <!-- Tlačítko pro potvrzení odpovědí -->
+                <button type="button" id="submitBtn">Potvrdit odpovědi</button>
             </div>
-            
-            <!-- Tlačítko pro potvrzení odpovědí a přesměrování na valentine.html -->
-            <button type="button" id="submitBtn">Potvrdit odpovědi</button> <!-- Odstraněno onclick, bude se ovládat z JavaScriptu -->
+            <!-- Sem přidáme odkaz na novou stránku -->
+            <a href="valentine.html" id="valentineLink" style="display: none;">Odpovědět na otázku o Valentýnovi</a>
 
         </form>
 
