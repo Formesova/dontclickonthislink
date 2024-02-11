@@ -4,54 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css.css">
     <title>Ověření</title>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Ověření, zdali jsi Štěpán Bláha</h1>
-        <h2>Pro jistotu a bezpečnost těchto kvalitních stránek je potřeba vyplnit test, který potvrdí, že se odkaz dostal ke správnému adresátovi</h2>
-        <h3>Test:</h3>
-        <form id="quizForm">
-            <div class="question" data-correct="b" data-feedback="Správná odpověď: Moravské nářečí a těžký autismus">
-                <p>1. Co je první věc, které si lidé všimnou, když Tě vidí?</p>
-                <label>
-                    <input type="radio" name="q1" value="a"> Moravské nářečí a lehký autismus
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="b"> Moravské nářečí a těžký autismus
-                </label>
-                <label>
-                    <input type="radio" name="q1" value="c"> Moravské nářečí a žádný autismus
-                </label>
-            </div>
-            <!-- ZDE JE ZMĚNA: Přidán text pod pátou otázkou -->
-            <div class="question" data-correct="b" data-feedback="Správná odpověď: Těstoviny (v určitém tvaru, které Ti dala Tvá nejlepší žena k narozeninám) s bílou omáčkou">
-                <p>5. Co je Tvá oblíbená příloha?</p>
-                <label>
-                    <input type="radio" name="q5" value="a"> Brambory
-                </label>
-                <label>
-                    <input type="radio" name="q5" value="b"> Těstoviny (v určitém tvaru, které Ti dala Tvá nejlepší žena k narozeninám)
-                </label>
-                <label>
-                    <input type="radio" name="q5" value="c"> Knedlík
-                </label>
-                <!-- ZDE JE ZMĚNA: Přidán text pod pátou otázkou -->
-                <p>Pokud jsou všechny Tvé odpovědi správné, budeš mít možnost se dostat dál, pokud ne, zkus to znovu.</p>
-            </div>
-            <div id="textContainer"></div>
-            <button type="button" id="submitBtn">Potvrdit odpovědi</button>
-        </form>
-        <div id="result" style="display: none;">
-            <h2>Výsledek testu</h2>
-            <div id="feedback"></div>
-            <p id="score"></p>
-            <button type="button" id="nextQuestionBtn" style="display: none;">Pokračovat na další otázku</button>
+<div class="container">
+    <h1>Ověření, zdali jsi Štěpán Bláha</h1>
+    <h2>Pro jistotu a bezpečnost těchto kvalitních stránek je potřeba vyplnit test, který potvrdí, že se odkaz dostal ke správnému adresátovi</h2>
+    <h3>Test:</h3>
+
+    <form id="quizForm">
+        <div class="question" data-correct="b" data-feedback="Správná odpověď: Moravské nářečí a těžký autismus">
+            <p>1. Co je první věc, které si lidé všimnou, když Tě vidí?</p>
+            <label>
+                <input type="radio" name="q1" value="a"> Moravské nářečí a lehký autismus
+            </label>
+            <label>
+                <input type="radio" name="q1" value="b"> Moravské nářečí a těžký autismus
+            </label>
+            <label>
+                <input type="radio" name="q1" value="c"> Moravské nářečí a žádný autismus
+            </label>
         </div>
+
+        <div class="question" data-correct="a" data-feedback="Správná odpověď: Nasrat svou ženu tím, že za ni stále platíš">
+            <p>2. Co je pro Tebe typické?</p>
+            <label>
+                <input type="radio" name="q2" value="a"> Nasrat svou ženu tím, že za ni stále platíš
+            </label>
+            <label>
+                <input type="radio" name="q2" value="b"> Dělat radost své ženě tím, že za ni stále platíš
+            </label>
+            <label>
+                <input type="radio" name="q2" value="c"> Dělat radost své ženě tím, že ji necháš platit
+            </label>
+        </div>
+
+        <div class="question" data-correct="c" data-feedback="Správná odpověď: Má nejkrásnšjší, nejlepší, nejvtipnější a nejmilovanější žena na světě">
+            <p>3. Kdo je tvůj nejoblíbenější člověk?</p>
+            <label>
+                <input type="radio" name="q3" value="a"> Asi Tvá žena
+            </label>
+            <label>
+                <input type="radio" name="q3" value="b"> Tvá žena
+            </label>
+            <label>
+                <input type="radio" name="q3" value="c"> Tvá nejkrásnšjší, nejlepší, nejvtipnější a nejmilovanější žena na světě
+            </label>
+        </div>
+
+        <div class="question" data-correct="a" data-feedback="Správná odpověď: Svým černým humorem, oblibou smaženého kuřecího z KFC a zálibou hraní basketbalu (moc dobře všichni víme, co to o Tobě říká)">
+            <p>4. Čím jsi jedinečný?</p>
+            <label>
+                <input type="radio" name="q4" value="a"> Svým černým humorem, oblibou smaženého kuřecího z KFC a zálibou hraní basketbalu (moc dobře všichni víme, co to o Tobě říká)
+            </label>
+            <label>
+                <input type="radio" name="q4" value="b"> Svým humorem a zálibou hraní basketbalu
+            </label>
+            <label>
+                <input type="radio" name="q4" value="c"> Zálibou hraní basketbalu a oblibou sushi
+            </label>
+        </div>
+
+        <div class="question" data-correct="b" data-feedback="Správná odpověď: Těstoviny (v určitém tvaru, které Ti dala Tvá nejlepší žena k narozeninám) s bílou omáčkou">
+            <p>5. Co je Tvá oblíbená příloha?</p>
+            <label>
+                <input type="radio" name="q5" value="a"> Brambory
+            </label>
+            <label>
+                <input type="radio" name="q5" value="b"> Těstoviny (v určitém tvaru, které Ti dala Tvá nejlepší žena k narozeninám)
+            </label>
+            <label>
+                <input type="radio" name="q5" value="c"> Knedlík
+            </label>
+        </div>
+
+        <div id="textContainer">
+            <p>Pokud jsou všechny Tvé odpovědi správné, budeš mít možnost se dostat dál, pokud ne, zkus to znovu, negře</p>
+            <button type="button" id="submitBtn">Potvrdit odpovědi</button>
+        </div>
+
+    </form>
+
+    <div id="result" style="display: none;">
+        <h2>Výsledek testu</h2>
+        <div id="feedback"></div>
+        <p id="score"></p>
+        <button type="button" id="nextQuestionBtn" style="display: none;">Pokračovat na další otázku</button>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Odkaz na stránku pro Valentýnovi -->
+    <a href="valentine.html" id="valentineLink" style="display: none;">Odpovědět na otázku o Valentýnovi</a>
+
+</div>
+
+<!-- Odkaz na soubor script.js -->
+<script src="script.js"></script>
+
 </body>
 </html>
