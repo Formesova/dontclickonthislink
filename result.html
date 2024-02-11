@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .fullscreen-gif {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="happy.gif" alt="Your GIF" class="fullscreen-gif">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* zabrání posuvníku */
+            position: relative; /* nutné pro umístění overlay */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 20px; /* Vzdálenost od horního okraje obrazovky */
+            text-align: center;
+            color: white;
+            font-size: 4em; /* Velikost písma */
+            z-index: 1; /* Nad gifelem */
+        }
+        .gif-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Pod overlay */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        LOVE YOU POOKIE<333
+    </div>
+    <div class="gif-container">
+        <img src="happy.gif" alt="Your GIF">
+    </div>
+</body>
+</html>
+
+
