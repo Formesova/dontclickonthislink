@@ -48,4 +48,79 @@
                 </label>
                 <label>
                     <input type="radio" name="q2" value="c"> Dělat radost své ženě tím, že ji necháš platit
-                <
+                </label>
+            </div>
+
+            <!-- Třetí otázka -->
+            <div class="question" data-correct="c" data-feedback="Správná odpověď: Má nejkrásnšjší, nejlepší, nejvtipnější a nejmilovanější žena na světě">
+                <p>3. Kdo je tvůj nejoblíbenější člověk?</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> Asi Tvá žena
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> Tvá žena
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="c"> Tvá nejkrásnšjší, nejlepší, nejvtipnější a nejmilovanější žena na světě
+                </label>
+            </div>
+
+            <!-- Čtvrtá otázka -->
+            <div class="question" data-correct="a" data-feedback="Správná odpověď: Svým černým humorem, oblibou smaženého kuřecího z KFC a zálibou hraní basketbalu (moc dobře všichni víme, co to o Tobě říká)">
+                <p>4. Čím jsi jedinečný?</p>
+                <label>
+                    <input type="radio" name="q4" value="a"> Svým černým humorem, oblibou smaženého kuřecího z KFC a zálibou hraní basketbalu (moc dobře všichni víme, co to o Tobě říká)
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> Svým humorem a zálibou hraní basketbalu
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="c"> Zálibou hraní basketbalu a oblibou sushi
+                </label>
+            </div>
+
+            <!-- Pátá otázka -->
+            <div class="question" data-correct="b" data-feedback="Správná odpověď: Těstoviny (v určitém tvaru, které Ti dala Tvá nejlepší žena k narozeninám) s bílou omáčkou">
+                <p>5. Co je Tvá oblíbená příloha?</p>
+                <label>
+                    <input type="radio" name="q5" value="a"> Brambory
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b"> Těstoviny (v určitém tvaru, které Ti dala Tvá nejlepší žena k narozeninám)
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="c"> Knedlík
+                </label>
+            </div>
+
+            <!-- Kontejner pro text a tlačítko -->
+            <div id="textContainer">
+                <!-- Text -->
+                <p>Pokud jsou všechny Tvé odpovědi správné, budeš mít možnost se dostat dál, pokud ne, zkus to znovu, negře</p>
+
+                <!-- Tlačítko pro potvrzení odpovědí -->
+                <button type="button" id="submitBtn">Potvrdit odpovědi</button>
+            </div>
+            <!-- Sem přidáme odkaz na novou stránku -->
+            <a href="valentine.html" id="valentineLink" style="display: none;">Odpovědět na otázku o Valentýnovi</a>
+
+        </form>
+
+        <!-- Výsledek testu -->
+        <div id="result" style="display: none;">
+            <h2>Výsledek testu</h2>
+            <div id="feedback"></div>
+            <p id="score"></p>
+
+            <!-- Tlačítko pro pokračování na další otázku (pouze v případě správné odpovědi na všechny otázky) -->
+            <button type="button" id="nextQuestionBtn" style="display: none;">Pokračovat na další otázku</button>
+        </div>
+
+        <!-- Script soubor pro JavaScript funkcionalitu -->
+        <script src="script.js"></script>
+
+    </div>
+
+</body>
+</html>
+
