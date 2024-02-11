@@ -22,22 +22,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Najdeme tlačítko "Ano"
-    var yesBtn = document.getElementById('yesBtn');
-
-    // Přidáme posluchače událostí pro kliknutí na tlačítko "Ano"
-    if(yesBtn) { // Kontrola existence tlačítka "Ano"
-        yesBtn.addEventListener('click', function () {
-            // Zde přidáme kód pro potvrzení tlačítka "Ano"
-            alert('Ano bylo kliknuto!');
-            // Můžete sem přidat další kód nebo přesměrování na další stránku, pokud je to potřeba
-
-            // Přesměrování na stránku result.html
-            window.location.href = 'result.html';
-        });
-    }
-});
-
-
