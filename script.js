@@ -24,19 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Najdeme tlačítka pro odpovědi na otázku Valentýna
     var yesBtn = document.getElementById('yesBtn');
-    var noBtn = document.getElementById('noBtn');
 
-    // Přidáme posluchače událostí pro kliknutí na tlačítka
-    if (yesBtn) { // Kontrola existence tlačítka "Ano"
+    // Přidáme posluchače událostí pro kliknutí na tlačítko "Ano"
+    if (yesBtn) {
         yesBtn.addEventListener('click', function () {
             // Přesměrování na stránku result.html při kliknutí na tlačítko "Ano"
             window.location.href = 'result.html';
-        });
-    }
-    if (noBtn) { // Kontrola existence tlačítka "Ne"
-        noBtn.addEventListener('click', function () {
-            // Zde můžete přidat kód, který se spustí při kliknutí na tlačítko "Ne"
-            // Například zobrazení zprávy nebo další akce
         });
     }
 });
